@@ -22,22 +22,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y89-ib-gnQ">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y89-ib-gnQ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="60" y="96" width="42" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balloon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tX-ZJ-ylc">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="148" y="96" width="58" height="21"/>
+                                    <rect key="frame" x="16" y="135" width="42" height="21"/>
                                 </variation>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-qw-SFJ">
@@ -54,27 +45,37 @@
                                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 </variation>
                             </toolbar>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balloon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tX-ZJ-ylc">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="79" y="135" width="58" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="NPm-ZR-kVD"/>
                                 <exclude reference="Y89-ib-gnQ"/>
-                                <exclude reference="3tX-ZJ-ylc"/>
                                 <exclude reference="oEZ-qw-SFJ"/>
+                                <exclude reference="3tX-ZJ-ylc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="NPm-ZR-kVD"/>
                                 <include reference="Y89-ib-gnQ"/>
-                                <include reference="3tX-ZJ-ylc"/>
                                 <include reference="oEZ-qw-SFJ"/>
+                                <include reference="3tX-ZJ-ylc"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="balloonCount" destination="Y89-ib-gnQ" id="jkL-Ka-iQA"/>
+                        <outlet property="balloonLabel" destination="3tX-ZJ-ylc" id="iV8-T0-Wyh"/>
                         <outlet property="myImageView" destination="NPm-ZR-kVD" id="Gbu-m9-UFA"/>
                     </connections>
                 </viewController>
